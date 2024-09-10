@@ -1,0 +1,202 @@
+2024-09-10 20:57:30,047 DEBUG cd frappe-bench && python3 -m venv env
+2024-09-10 20:57:33,340 DEBUG cd frappe-bench && /home/ecosoft/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-09-10 20:57:35,298 DEBUG cd frappe-bench && /home/ecosoft/frappe-bench/env/bin/python -m pip install --quiet wheel
+2024-09-10 20:57:36,224 LOG Getting frappe
+2024-09-10 20:57:36,224 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2024-09-10 20:57:46,725 LOG Installing frappe
+2024-09-10 20:57:46,725 DEBUG cd /home/ecosoft/frappe-bench && /home/ecosoft/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ecosoft/frappe-bench/apps/frappe 
+2024-09-10 20:58:52,461 DEBUG cd /home/ecosoft/frappe-bench/apps/frappe && yarn install --check-files
+2024-09-10 20:59:04,080 DEBUG cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe:
+2024-09-10 20:59:04,420 WARNING cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-09-10 20:59:04,420 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-10 20:59:04,420 DEBUG cd frappe-bench && bench build
+2024-09-10 20:59:04,592 INFO /usr/local/bin/bench build
+2024-09-10 20:59:30,732 LOG setting up backups
+2024-09-10 20:59:30,740 LOG backups were set up
+2024-09-10 20:59:30,740 INFO Bench frappe-bench initialized
+2024-09-10 20:59:51,612 INFO /usr/local/bin/bench start
+2024-09-10 20:59:51,974 INFO /usr/local/bin/bench schedule
+2024-09-10 20:59:51,985 INFO /usr/local/bin/bench watch
+2024-09-10 20:59:52,032 INFO /usr/local/bin/bench serve --port 8000
+2024-09-10 20:59:52,042 INFO /usr/local/bin/bench worker
+2024-09-10 21:00:29,210 INFO /usr/local/bin/bench new-site dcode.com
+2024-09-10 21:02:10,113 INFO /usr/local/bin/bench --site dcode.com add-to-hosts
+2024-09-10 21:05:27,071 INFO /usr/local/bin/bench get-app erpnext --branch version-15
+2024-09-10 21:05:27,706 LOG Getting erpnext
+2024-09-10 21:05:27,706 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2024-09-10 21:05:34,212 LOG Installing erpnext
+2024-09-10 21:05:34,213 DEBUG cd /home/ecosoft/frappe-bench && /home/ecosoft/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ecosoft/frappe-bench/apps/erpnext 
+2024-09-10 21:05:51,109 DEBUG cd /home/ecosoft/frappe-bench/apps/erpnext && yarn install --check-files
+2024-09-10 21:05:51,663 DEBUG bench build --app erpnext
+2024-09-10 21:05:51,813 INFO /usr/local/bin/bench build --app erpnext
+2024-09-10 21:05:56,093 DEBUG cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe:
+2024-09-10 21:05:56,370 WARNING cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-09-10 21:05:56,370 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-10 21:06:24,234 INFO /usr/local/bin/bench --site dcode.com install-app erpnext
+2024-09-10 21:08:33,135 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-09-10 21:10:23,967 INFO /usr/local/bin/bench start
+2024-09-10 21:10:24,305 INFO /usr/local/bin/bench serve --port 8000
+2024-09-10 21:10:24,310 INFO /usr/local/bin/bench watch
+2024-09-10 21:10:24,319 INFO /usr/local/bin/bench schedule
+2024-09-10 21:10:24,372 INFO /usr/local/bin/bench worker
+2024-09-10 21:11:31,576 INFO /usr/local/bin/bench get-app erpnext --branch version-15
+2024-09-10 21:11:35,624 INFO App moved from apps/erpnext to archived/apps/erpnext-2024-09-10
+2024-09-10 21:11:35,629 LOG Getting erpnext
+2024-09-10 21:11:35,630 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2024-09-10 21:12:47,553 WARNING cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream executed with exit code 128
+2024-09-10 21:12:47,553 WARNING /usr/local/bin/bench get-app erpnext --branch version-15 executed with exit code 1
+2024-09-10 21:13:16,148 INFO /usr/local/bin/bench get-app erpnext
+2024-09-10 21:13:16,699 LOG Getting erpnext
+2024-09-10 21:13:16,699 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git  --depth 1 --origin upstream
+2024-09-10 21:13:24,516 LOG Installing erpnext
+2024-09-10 21:13:24,516 DEBUG cd /home/ecosoft/frappe-bench && /home/ecosoft/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ecosoft/frappe-bench/apps/erpnext 
+2024-09-10 21:13:28,216 DEBUG cd /home/ecosoft/frappe-bench/apps/erpnext && yarn install --check-files
+2024-09-10 21:13:28,785 DEBUG bench build --app erpnext
+2024-09-10 21:13:28,947 INFO /usr/local/bin/bench build --app erpnext
+2024-09-10 21:13:37,034 DEBUG cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe:
+2024-09-10 21:13:37,336 WARNING cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-09-10 21:13:37,336 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-10 21:13:53,740 INFO /usr/local/bin/bench --site dcode.com install-app erpnext
+2024-09-10 21:15:15,188 INFO /usr/local/bin/bench version
+2024-09-10 21:19:03,837 INFO /usr/local/bin/bench --site dcode.com uninstall-app erpnext
+2024-09-10 21:19:12,875 INFO /usr/local/bin/bench remove-app erpnext
+2024-09-10 21:19:13,032 INFO /usr/local/bin/bench --site all list-apps --format json
+2024-09-10 21:19:13,730 INFO /usr/local/bin/bench --site dcode.com list-apps
+2024-09-10 21:19:14,280 DEBUG cd /home/ecosoft/frappe-bench && /home/ecosoft/frappe-bench/env/bin/python -m pip uninstall -y erpnext
+2024-09-10 21:19:15,066 INFO App moved from apps/erpnext to archived/apps/erpnext-2024-09-10_1
+2024-09-10 21:19:15,719 DEBUG cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe:
+2024-09-10 21:19:16,038 WARNING cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-09-10 21:19:16,038 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-10 21:20:09,790 INFO /usr/local/bin/bench clear-cache
+2024-09-10 21:20:27,194 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-09-10 21:20:38,259 INFO /usr/local/bin/bench build
+2024-09-10 21:21:15,250 INFO /usr/local/bin/bench get-app erpnext
+2024-09-10 21:21:15,852 LOG Getting erpnext
+2024-09-10 21:21:15,853 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git  --depth 1 --origin upstream
+2024-09-10 21:21:26,063 LOG Installing erpnext
+2024-09-10 21:21:26,063 DEBUG cd /home/ecosoft/frappe-bench && /home/ecosoft/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ecosoft/frappe-bench/apps/erpnext 
+2024-09-10 21:21:29,140 DEBUG cd /home/ecosoft/frappe-bench/apps/erpnext && yarn install --check-files
+2024-09-10 21:21:29,738 DEBUG bench build --app erpnext
+2024-09-10 21:21:29,903 INFO /usr/local/bin/bench build --app erpnext
+2024-09-10 21:21:38,486 DEBUG cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe:
+2024-09-10 21:21:38,776 WARNING cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-09-10 21:21:38,777 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-10 21:25:01,832 INFO /usr/local/bin/bench --site dcode.com install-app erpnext
+2024-09-10 21:25:17,047 INFO /usr/local/bin/bench --site dcode.com reinstall-app erpnext
+2024-09-10 21:25:25,149 INFO /usr/local/bin/bench --site dcode.com reinstall
+2024-09-10 21:28:18,003 INFO /usr/local/bin/bench --site dcode.com install-app erpnext
+2024-09-10 21:30:35,130 INFO /usr/local/bin/bench migrate
+2024-09-10 21:30:53,001 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-09-10 21:32:13,929 INFO /usr/local/bin/bench new-site test
+2024-09-10 21:33:20,010 INFO /usr/local/bin/bench start
+2024-09-10 21:33:20,370 INFO /usr/local/bin/bench serve --port 8000
+2024-09-10 21:33:20,384 INFO /usr/local/bin/bench watch
+2024-09-10 21:33:20,444 INFO /usr/local/bin/bench worker
+2024-09-10 21:33:20,444 INFO /usr/local/bin/bench schedule
+2024-09-10 21:33:35,793 INFO /usr/local/bin/bench use test
+2024-09-10 21:33:40,834 INFO /usr/local/bin/bench start
+2024-09-10 21:33:41,192 INFO /usr/local/bin/bench schedule
+2024-09-10 21:33:41,202 INFO /usr/local/bin/bench worker
+2024-09-10 21:33:41,203 INFO /usr/local/bin/bench watch
+2024-09-10 21:33:41,232 INFO /usr/local/bin/bench serve --port 8000
+2024-09-10 21:35:05,543 INFO /usr/local/bin/bench remove-app erpnext
+2024-09-10 21:35:05,686 INFO /usr/local/bin/bench --site all list-apps --format json
+2024-09-10 21:35:06,345 WARNING /usr/local/bin/bench remove-app erpnext executed with exit code 1
+2024-09-10 21:36:59,040 INFO /usr/local/bin/bench get-app erpnext
+2024-09-10 21:36:59,584 LOG Getting erpnext
+2024-09-10 21:36:59,584 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git  --depth 1 --origin upstream
+2024-09-10 21:37:07,321 LOG Installing erpnext
+2024-09-10 21:37:07,321 DEBUG cd /home/ecosoft/frappe-bench && /home/ecosoft/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ecosoft/frappe-bench/apps/erpnext 
+2024-09-10 21:37:10,369 DEBUG cd /home/ecosoft/frappe-bench/apps/erpnext && yarn install --check-files
+2024-09-10 21:37:10,942 DEBUG bench build --app erpnext
+2024-09-10 21:37:11,103 INFO /usr/local/bin/bench build --app erpnext
+2024-09-10 21:37:24,447 DEBUG cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe:
+2024-09-10 21:37:24,731 WARNING cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-09-10 21:37:24,731 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-10 21:37:37,116 INFO /usr/local/bin/bench restart
+2024-09-10 21:37:37,581 DEBUG cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe:
+2024-09-10 21:37:37,827 WARNING cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-09-10 21:37:37,827 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-09-10 21:37:54,727 INFO /usr/local/bin/bench setup supervisor
+2024-09-10 21:37:55,465 LOG Updated supervisord.conf: 'chmod' changed from '0700                       ; sockef file mode (default 0700)' to '0760'
+2024-09-10 21:37:55,465 LOG Updated supervisord.conf: 'chown' changed from '' to 'root:root'
+2024-09-10 21:37:57,460 LOG Updating supervisord.conf failed due to '[Errno 13] Permission denied: '/etc/supervisor/supervisord.conf''
+2024-09-10 21:37:57,460 DEBUG sudo systemctl reload supervisor
+2024-09-10 21:38:04,236 INFO /usr/local/bin/bench restart
+2024-09-10 21:38:04,694 DEBUG cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe:
+2024-09-10 21:38:05,013 WARNING cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-09-10 21:38:05,013 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-09-10 21:39:17,104 INFO /usr/local/bin/bench --site test install-app erpnext
+2024-09-10 21:42:45,608 INFO /usr/local/bin/bench get-app hrms
+2024-09-10 21:42:46,207 LOG Getting hrms
+2024-09-10 21:42:46,208 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git  --depth 1 --origin upstream
+2024-09-10 21:42:49,467 LOG Installing hrms
+2024-09-10 21:42:49,467 DEBUG cd /home/ecosoft/frappe-bench && /home/ecosoft/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ecosoft/frappe-bench/apps/hrms 
+2024-09-10 21:42:51,878 DEBUG cd /home/ecosoft/frappe-bench/apps/hrms && yarn install --check-files
+2024-09-10 21:44:05,234 DEBUG bench build --app hrms
+2024-09-10 21:44:05,456 INFO /usr/local/bin/bench build --app hrms
+2024-09-10 21:44:37,406 DEBUG cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe:
+2024-09-10 21:44:37,666 WARNING cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-09-10 21:44:37,666 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-10 21:45:16,103 INFO /usr/local/bin/bench --site test install-app hrms
+2024-09-10 21:46:48,185 INFO /usr/local/bin/bench drop-site test
+2024-09-10 21:47:12,358 INFO /usr/local/bin/bench drop-site test
+2024-09-10 21:48:24,084 INFO /usr/local/bin/bench new-site saralrat
+2024-09-10 21:49:07,742 INFO /usr/local/bin/bench list-apps
+2024-09-10 21:50:20,217 INFO /usr/local/bin/bench saralrat
+2024-09-10 21:50:35,129 INFO /usr/local/bin/bench new-site saralrat
+2024-09-10 21:52:06,823 INFO /usr/local/bin/bench get-app hrms
+2024-09-10 21:52:07,469 LOG Getting hrms
+2024-09-10 21:52:07,469 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git  --depth 1 --origin upstream
+2024-09-10 21:52:12,793 LOG Installing hrms
+2024-09-10 21:52:12,794 DEBUG cd /home/ecosoft/frappe-bench && /home/ecosoft/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ecosoft/frappe-bench/apps/hrms 
+2024-09-10 21:52:15,627 DEBUG cd /home/ecosoft/frappe-bench/apps/hrms && yarn install --check-files
+2024-09-10 21:52:50,138 DEBUG bench build --app hrms
+2024-09-10 21:52:50,267 INFO /usr/local/bin/bench build --app hrms
+2024-09-10 21:53:24,403 DEBUG cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe:
+2024-09-10 21:53:24,646 WARNING cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-09-10 21:53:24,647 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-10 21:53:53,262 INFO /usr/local/bin/bench new-site saralrat
+2024-09-10 21:55:07,732 INFO /usr/local/bin/bench --site saralrat install-app hrms
+2024-09-10 21:55:25,081 INFO /usr/local/bin/bench get-app erpnext
+2024-09-10 21:55:25,623 LOG Getting erpnext
+2024-09-10 21:55:25,624 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git  --depth 1 --origin upstream
+2024-09-10 21:55:32,919 LOG Installing erpnext
+2024-09-10 21:55:32,920 DEBUG cd /home/ecosoft/frappe-bench && /home/ecosoft/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ecosoft/frappe-bench/apps/erpnext 
+2024-09-10 21:55:35,690 DEBUG cd /home/ecosoft/frappe-bench/apps/erpnext && yarn install --check-files
+2024-09-10 21:55:36,193 DEBUG bench build --app erpnext
+2024-09-10 21:55:36,326 INFO /usr/local/bin/bench build --app erpnext
+2024-09-10 21:55:43,343 DEBUG cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe:
+2024-09-10 21:55:43,583 WARNING cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-09-10 21:55:43,583 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-10 21:55:56,005 INFO /usr/local/bin/bench --site saralrat install-app erpnext
+2024-09-10 21:57:39,353 INFO /usr/local/bin/bench start
+2024-09-10 21:57:39,717 INFO /usr/local/bin/bench worker
+2024-09-10 21:57:39,718 INFO /usr/local/bin/bench watch
+2024-09-10 21:57:39,774 INFO /usr/local/bin/bench serve --port 8000
+2024-09-10 21:57:39,787 INFO /usr/local/bin/bench schedule
+2024-09-10 21:58:02,159 INFO /usr/local/bin/bench use saralrat
+2024-09-10 21:58:07,969 INFO /usr/local/bin/bench start
+2024-09-10 21:58:08,331 INFO /usr/local/bin/bench worker
+2024-09-10 21:58:08,336 INFO /usr/local/bin/bench schedule
+2024-09-10 21:58:08,389 INFO /usr/local/bin/bench serve --port 8000
+2024-09-10 21:58:08,396 INFO /usr/local/bin/bench watch
+2024-09-10 22:00:20,464 INFO /usr/local/bin/bench get-app hrms
+2024-09-10 22:00:24,730 INFO App moved from apps/hrms to archived/apps/hrms-2024-09-10
+2024-09-10 22:00:24,738 LOG Getting hrms
+2024-09-10 22:00:24,738 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git --branch develop --depth 1 --origin upstream
+2024-09-10 22:00:27,766 LOG Installing hrms
+2024-09-10 22:00:27,767 DEBUG cd /home/ecosoft/frappe-bench && /home/ecosoft/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ecosoft/frappe-bench/apps/hrms 
+2024-09-10 22:00:30,935 DEBUG cd /home/ecosoft/frappe-bench/apps/hrms && yarn install --check-files
+2024-09-10 22:01:09,091 DEBUG bench build --app hrms
+2024-09-10 22:01:09,276 INFO /usr/local/bin/bench build --app hrms
+2024-09-10 22:01:41,436 DEBUG cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe:
+2024-09-10 22:01:41,685 WARNING cd /home/ecosoft/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-09-10 22:01:41,685 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-10 22:01:51,836 INFO /usr/local/bin/bench --site saralrat install-app hrms
+2024-09-10 22:03:34,807 INFO /usr/local/bin/bench version
+2024-09-10 22:03:42,012 INFO /usr/local/bin/bench start
+2024-09-10 22:03:42,383 INFO /usr/local/bin/bench serve --port 8000
+2024-09-10 22:03:42,392 INFO /usr/local/bin/bench watch
+2024-09-10 22:03:42,433 INFO /usr/local/bin/bench schedule
+2024-09-10 22:03:42,437 INFO /usr/local/bin/bench worker
