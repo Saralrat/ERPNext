@@ -1,0 +1,120 @@
+set -o pipefail; /usr/bin/mariadb-dump --user=_8ab4c2f976318237 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8ab4c2f976318237 | /usr/bin/gzip >> ./dcode.com/private/backups/20240911_103003-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-09-11 10:30:08.702361
+Config  : /home/ecosoft/frappe-bench/sites/dcode.com/private/backups/20240911_103003-dcode_com-site_config_backup.json 127.0B
+Database: /home/ecosoft/frappe-bench/sites/dcode.com/private/backups/20240911_103003-dcode_com-database.sql.gz 716.7KiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_095be9132882bc01 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _095be9132882bc01 | /usr/bin/gzip >> ./print-designer.test/private/backups/20240911_120008-print-designer_test-database.sql.gz
+
+Backup Summary for print-designer.test at 2024-09-11 12:00:12.452667
+Config  : /home/ecosoft/frappe-bench/sites/print-designer.test/private/backups/20240911_120008-print-designer_test-site_config_backup.json 191.0B
+Database: /home/ecosoft/frappe-bench/sites/print-designer.test/private/backups/20240911_120008-print-designer_test-database.sql.gz 1015.2KiB
+Backup for Site print-designer.test has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_ddce7bd064efd9b5 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _ddce7bd064efd9b5 | /usr/bin/gzip >> ./saralrat/private/backups/20240911_120012-saralrat-database.sql.gz
+
+Backup Summary for saralrat at 2024-09-11 12:00:18.049099
+Config  : /home/ecosoft/frappe-bench/sites/saralrat/private/backups/20240911_120012-saralrat-site_config_backup.json 191.0B
+Database: /home/ecosoft/frappe-bench/sites/saralrat/private/backups/20240911_120012-saralrat-database.sql.gz 1.0MiB
+Backup for Site saralrat has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_8ab4c2f976318237 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8ab4c2f976318237 | /usr/bin/gzip >> ./dcode.com/private/backups/20240911_163002-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-09-11 16:30:05.642733
+Config  : /home/ecosoft/frappe-bench/sites/dcode.com/private/backups/20240911_163002-dcode_com-site_config_backup.json 127.0B
+Database: /home/ecosoft/frappe-bench/sites/dcode.com/private/backups/20240911_163002-dcode_com-database.sql.gz 719.0KiB
+Backup for Site dcode.com has been successfully completed
+File ./print-designer.test/private/backups/20240911_120008-print-designer_test-site_config_backup.json is recent
+File ./print-designer.test/private/backups/20240911_120008-print-designer_test-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_095be9132882bc01 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _095be9132882bc01 | /usr/bin/gzip >> ./print-designer.test/private/backups/20240911_180005-print-designer_test-database.sql.gz
+
+Backup Summary for print-designer.test at 2024-09-11 18:00:09.070141
+Config  : /home/ecosoft/frappe-bench/sites/print-designer.test/private/backups/20240911_180005-print-designer_test-site_config_backup.json 191.0B
+Database: /home/ecosoft/frappe-bench/sites/print-designer.test/private/backups/20240911_180005-print-designer_test-database.sql.gz 1.0MiB
+Backup for Site print-designer.test has been successfully completed
+File ./saralrat/private/backups/20240911_120012-saralrat-site_config_backup.json is recent
+File ./saralrat/private/backups/20240911_120012-saralrat-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_ddce7bd064efd9b5 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _ddce7bd064efd9b5 | /usr/bin/gzip >> ./saralrat/private/backups/20240911_180009-saralrat-database.sql.gz
+
+Backup Summary for saralrat at 2024-09-11 18:00:12.827733
+Config  : /home/ecosoft/frappe-bench/sites/saralrat/private/backups/20240911_180009-saralrat-site_config_backup.json 191.0B
+Database: /home/ecosoft/frappe-bench/sites/saralrat/private/backups/20240911_180009-saralrat-database.sql.gz 1.0MiB
+Backup for Site saralrat has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_b1a67366bbc6b6e1 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _b1a67366bbc6b6e1 | /usr/bin/gzip >> ./test/private/backups/20240911_180012-test-database.sql.gz
+
+Backup Summary for test at 2024-09-11 18:00:16.264097
+Config  : /home/ecosoft/frappe-bench/sites/test/private/backups/20240911_180012-test-site_config_backup.json 191.0B
+Database: /home/ecosoft/frappe-bench/sites/test/private/backups/20240911_180012-test-database.sql.gz 909.6KiB
+Backup for Site test has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_8ab4c2f976318237 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8ab4c2f976318237 | /usr/bin/gzip >> ./dcode.com/private/backups/20240912_103002-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-09-12 10:30:05.818903
+Config  : /home/ecosoft/frappe-bench/sites/dcode.com/private/backups/20240912_103002-dcode_com-site_config_backup.json 127.0B
+Database: /home/ecosoft/frappe-bench/sites/dcode.com/private/backups/20240912_103002-dcode_com-database.sql.gz 721.9KiB
+Backup for Site dcode.com has been successfully completed
+File ./print-designer.test/private/backups/20240911_180005-print-designer_test-site_config_backup.json is recent
+File ./print-designer.test/private/backups/20240911_120008-print-designer_test-site_config_backup.json is recent
+File ./print-designer.test/private/backups/20240911_120008-print-designer_test-database.sql.gz is recent
+File ./print-designer.test/private/backups/20240911_180005-print-designer_test-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_095be9132882bc01 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _095be9132882bc01 | /usr/bin/gzip >> ./print-designer.test/private/backups/20240912_120005-print-designer_test-database.sql.gz
+
+Backup Summary for print-designer.test at 2024-09-12 12:00:09.543357
+Config  : /home/ecosoft/frappe-bench/sites/print-designer.test/private/backups/20240912_120005-print-designer_test-site_config_backup.json 191.0B
+Database: /home/ecosoft/frappe-bench/sites/print-designer.test/private/backups/20240912_120005-print-designer_test-database.sql.gz 1.0MiB
+Backup for Site print-designer.test has been successfully completed
+File ./saralrat/private/backups/20240911_120012-saralrat-site_config_backup.json is recent
+File ./saralrat/private/backups/20240911_180009-saralrat-database.sql.gz is recent
+File ./saralrat/private/backups/20240911_120012-saralrat-database.sql.gz is recent
+File ./saralrat/private/backups/20240911_180009-saralrat-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_ddce7bd064efd9b5 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _ddce7bd064efd9b5 | /usr/bin/gzip >> ./saralrat/private/backups/20240912_120009-saralrat-database.sql.gz
+
+Backup Summary for saralrat at 2024-09-12 12:00:13.633884
+Config  : /home/ecosoft/frappe-bench/sites/saralrat/private/backups/20240912_120009-saralrat-site_config_backup.json 191.0B
+Database: /home/ecosoft/frappe-bench/sites/saralrat/private/backups/20240912_120009-saralrat-database.sql.gz 1.0MiB
+Backup for Site saralrat has been successfully completed
+File ./test/private/backups/20240911_180012-test-site_config_backup.json is recent
+File ./test/private/backups/20240911_180012-test-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_b1a67366bbc6b6e1 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _b1a67366bbc6b6e1 | /usr/bin/gzip >> ./test/private/backups/20240912_120013-test-database.sql.gz
+
+Backup Summary for test at 2024-09-12 12:00:17.491189
+Config  : /home/ecosoft/frappe-bench/sites/test/private/backups/20240912_120013-test-site_config_backup.json 191.0B
+Database: /home/ecosoft/frappe-bench/sites/test/private/backups/20240912_120013-test-database.sql.gz 1.0MiB
+Backup for Site test has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_8ab4c2f976318237 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8ab4c2f976318237 | /usr/bin/gzip >> ./dcode.com/private/backups/20240912_163002-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-09-12 16:30:06.295766
+Config  : /home/ecosoft/frappe-bench/sites/dcode.com/private/backups/20240912_163002-dcode_com-site_config_backup.json 127.0B
+Database: /home/ecosoft/frappe-bench/sites/dcode.com/private/backups/20240912_163002-dcode_com-database.sql.gz 724.0KiB
+Backup for Site dcode.com has been successfully completed
+File ./print-designer.test/private/backups/20240911_180005-print-designer_test-site_config_backup.json is recent
+File ./print-designer.test/private/backups/20240912_120005-print-designer_test-site_config_backup.json is recent
+File ./print-designer.test/private/backups/20240912_120005-print-designer_test-database.sql.gz is recent
+File ./print-designer.test/private/backups/20240911_120008-print-designer_test-site_config_backup.json is older than 24 hours
+File ./print-designer.test/private/backups/20240911_120008-print-designer_test-database.sql.gz is older than 24 hours
+File ./print-designer.test/private/backups/20240911_180005-print-designer_test-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_095be9132882bc01 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _095be9132882bc01 | /usr/bin/gzip >> ./print-designer.test/private/backups/20240912_180006-print-designer_test-database.sql.gz
+
+Backup Summary for print-designer.test at 2024-09-12 18:00:10.161156
+Config  : /home/ecosoft/frappe-bench/sites/print-designer.test/private/backups/20240912_180006-print-designer_test-site_config_backup.json 191.0B
+Database: /home/ecosoft/frappe-bench/sites/print-designer.test/private/backups/20240912_180006-print-designer_test-database.sql.gz 1.0MiB
+Backup for Site print-designer.test has been successfully completed
+File ./saralrat/private/backups/20240911_120012-saralrat-site_config_backup.json is older than 24 hours
+File ./saralrat/private/backups/20240911_180009-saralrat-database.sql.gz is recent
+File ./saralrat/private/backups/20240912_120009-saralrat-database.sql.gz is recent
+File ./saralrat/private/backups/20240911_120012-saralrat-database.sql.gz is older than 24 hours
+File ./saralrat/private/backups/20240912_120009-saralrat-site_config_backup.json is recent
+File ./saralrat/private/backups/20240911_180009-saralrat-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_ddce7bd064efd9b5 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _ddce7bd064efd9b5 | /usr/bin/gzip >> ./saralrat/private/backups/20240912_180010-saralrat-database.sql.gz
+
+Backup Summary for saralrat at 2024-09-12 18:00:13.410351
+Config  : /home/ecosoft/frappe-bench/sites/saralrat/private/backups/20240912_180010-saralrat-site_config_backup.json 191.0B
+Database: /home/ecosoft/frappe-bench/sites/saralrat/private/backups/20240912_180010-saralrat-database.sql.gz 1.0MiB
+Backup for Site saralrat has been successfully completed
+File ./test/private/backups/20240911_180012-test-site_config_backup.json is recent
+File ./test/private/backups/20240912_120013-test-site_config_backup.json is recent
+File ./test/private/backups/20240911_180012-test-database.sql.gz is recent
+File ./test/private/backups/20240912_120013-test-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_b1a67366bbc6b6e1 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _b1a67366bbc6b6e1 | /usr/bin/gzip >> ./test/private/backups/20240912_180013-test-database.sql.gz
+
+Backup Summary for test at 2024-09-12 18:00:16.861831
+Config  : /home/ecosoft/frappe-bench/sites/test/private/backups/20240912_180013-test-site_config_backup.json 191.0B
+Database: /home/ecosoft/frappe-bench/sites/test/private/backups/20240912_180013-test-database.sql.gz 1.1MiB
+Backup for Site test has been successfully completed
