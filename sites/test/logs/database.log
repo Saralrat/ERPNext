@@ -1872,3 +1872,73 @@ ALTER TABLE `tabTimesheet` MODIFY `base_total_costing_amount` decimal(21,9) NOT 
 ALTER TABLE `tabPrint Format` ADD COLUMN `print_designer_print_format` json, ADD COLUMN `print_designer_preview_img` text, ADD COLUMN `print_designer_after_table` json, ADD COLUMN `print_designer_settings` json, ADD COLUMN `print_designer_header` json, ADD COLUMN `print_designer_footer` json, ADD COLUMN `print_designer_body` json, ADD COLUMN `print_designer` tinyint NOT NULL DEFAULT 0, ADD COLUMN `print_designer_template_app` varchar(140) DEFAULT 'print_designer'
 2024-09-12 08:54:06,137 WARNING database DDL Query made to DB:
 ALTER TABLE `tabPrint Format` MODIFY `align_labels_right` tinyint NOT NULL DEFAULT 0, MODIFY `custom_format` tinyint NOT NULL DEFAULT 0, MODIFY `show_section_headings` tinyint NOT NULL DEFAULT 0, MODIFY `margin_right` decimal(21,9) NOT NULL DEFAULT 15.0, MODIFY `absolute_value` tinyint NOT NULL DEFAULT 0, MODIFY `disabled` tinyint NOT NULL DEFAULT 0, MODIFY `margin_top` decimal(21,9) NOT NULL DEFAULT 15.0, MODIFY `raw_printing` tinyint NOT NULL DEFAULT 0, MODIFY `line_breaks` tinyint NOT NULL DEFAULT 0, MODIFY `print_format_builder` tinyint NOT NULL DEFAULT 0, MODIFY `margin_left` decimal(21,9) NOT NULL DEFAULT 15.0, MODIFY `margin_bottom` decimal(21,9) NOT NULL DEFAULT 15.0, MODIFY `print_format_builder_beta` tinyint NOT NULL DEFAULT 0, MODIFY `font_size` int NOT NULL DEFAULT 14
+2024-09-13 14:10:15,139 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCustomer` MODIFY `so_required` tinyint NOT NULL DEFAULT 0, MODIFY `dn_required` tinyint NOT NULL DEFAULT 0, MODIFY `disabled` tinyint NOT NULL DEFAULT 0, MODIFY `is_frozen` tinyint NOT NULL DEFAULT 0, MODIFY `default_commission_rate` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `is_internal_customer` tinyint NOT NULL DEFAULT 0
+2024-09-13 14:10:15,139 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCustomer` MODIFY `so_required` tinyint NOT NULL DEFAULT 0, MODIFY `dn_required` tinyint NOT NULL DEFAULT 0, MODIFY `disabled` tinyint NOT NULL DEFAULT 0, MODIFY `is_frozen` tinyint NOT NULL DEFAULT 0, MODIFY `default_commission_rate` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `is_internal_customer` tinyint NOT NULL DEFAULT 0
+2024-09-13 14:10:15,139 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCustomer` MODIFY `so_required` tinyint NOT NULL DEFAULT 0, MODIFY `dn_required` tinyint NOT NULL DEFAULT 0, MODIFY `disabled` tinyint NOT NULL DEFAULT 0, MODIFY `is_frozen` tinyint NOT NULL DEFAULT 0, MODIFY `default_commission_rate` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `is_internal_customer` tinyint NOT NULL DEFAULT 0
+2024-09-13 14:10:15,139 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCustomer` MODIFY `so_required` tinyint NOT NULL DEFAULT 0, MODIFY `dn_required` tinyint NOT NULL DEFAULT 0, MODIFY `disabled` tinyint NOT NULL DEFAULT 0, MODIFY `is_frozen` tinyint NOT NULL DEFAULT 0, MODIFY `default_commission_rate` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `is_internal_customer` tinyint NOT NULL DEFAULT 0
+2024-09-13 14:10:15,139 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCustomer` MODIFY `so_required` tinyint NOT NULL DEFAULT 0, MODIFY `dn_required` tinyint NOT NULL DEFAULT 0, MODIFY `disabled` tinyint NOT NULL DEFAULT 0, MODIFY `is_frozen` tinyint NOT NULL DEFAULT 0, MODIFY `default_commission_rate` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `is_internal_customer` tinyint NOT NULL DEFAULT 0
+2024-09-13 14:11:03,036 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCustomer` MODIFY `so_required` tinyint NOT NULL DEFAULT 0, MODIFY `is_frozen` tinyint NOT NULL DEFAULT 0, MODIFY `dn_required` tinyint NOT NULL DEFAULT 0, MODIFY `is_internal_customer` tinyint NOT NULL DEFAULT 0, MODIFY `default_commission_rate` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `disabled` tinyint NOT NULL DEFAULT 0
+2024-09-13 14:11:03,036 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCustomer` MODIFY `so_required` tinyint NOT NULL DEFAULT 0, MODIFY `is_frozen` tinyint NOT NULL DEFAULT 0, MODIFY `dn_required` tinyint NOT NULL DEFAULT 0, MODIFY `is_internal_customer` tinyint NOT NULL DEFAULT 0, MODIFY `default_commission_rate` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `disabled` tinyint NOT NULL DEFAULT 0
+2024-09-16 10:02:05,778 WARNING database DDL Query made to DB:
+create table `tabtest tab` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2024-09-16 10:02:05,778 WARNING database DDL Query made to DB:
+create table `tabtest tab` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2024-09-16 10:03:39,402 WARNING database DDL Query made to DB:
+ALTER TABLE `tabtest tab` ADD COLUMN `data_vzhr` varchar(140), ADD COLUMN `data_fwjs` varchar(140), ADD COLUMN `data_ykpn` varchar(140), ADD COLUMN `data_ntiw` varchar(140)
+2024-09-16 10:05:36,570 WARNING database DDL Query made to DB:
+create table `tabtest link tab` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci

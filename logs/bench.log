@@ -370,3 +370,17 @@
 2024-09-13 10:24:45,272 INFO /home/ecosoft/.local/bin/bench worker
 2024-09-13 10:24:45,299 INFO /home/ecosoft/.local/bin/bench watch
 2024-09-13 10:42:42,262 INFO /home/ecosoft/.local/bin/bench set-config -g server_script_enabled 1
+2024-09-13 12:00:01,649 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-13 18:00:01,914 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-14 20:42:18,446 INFO /home/ecosoft/.local/bin/bench start
+2024-09-14 20:42:19,017 INFO /home/ecosoft/.local/bin/bench watch
+2024-09-14 20:42:19,018 INFO /home/ecosoft/.local/bin/bench schedule
+2024-09-14 20:42:19,024 INFO /home/ecosoft/.local/bin/bench worker
+2024-09-14 20:42:19,077 INFO /home/ecosoft/.local/bin/bench serve --port 8000
+2024-09-15 00:00:01,434 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-16 08:56:31,172 INFO /home/ecosoft/.local/bin/bench start
+2024-09-16 08:56:31,733 INFO /home/ecosoft/.local/bin/bench worker
+2024-09-16 08:56:31,775 INFO /home/ecosoft/.local/bin/bench watch
+2024-09-16 08:56:31,788 INFO /home/ecosoft/.local/bin/bench serve --port 8000
+2024-09-16 08:56:31,825 INFO /home/ecosoft/.local/bin/bench schedule
+2024-09-16 12:00:01,908 INFO /usr/local/bin/bench --verbose --site all backup

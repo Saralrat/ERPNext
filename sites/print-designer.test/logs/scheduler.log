@@ -1,0 +1,3 @@
+2024-09-13 13:04:01,429 ERROR scheduler Skipped queueing hrms.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts because it was found in queue for print-designer.test
+2024-09-13 13:04:01,523 ERROR scheduler Skipped queueing hrms.hr.doctype.shift_assignment_schedule.shift_assignment_schedule.process_auto_shift_creation because it was found in queue for print-designer.test
+2024-09-13 13:04:01,565 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for print-designer.test

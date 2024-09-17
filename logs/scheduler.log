@@ -33,3 +33,13 @@ Traceback (most recent call last):
   File "/home/ecosoft/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
     raise errorclass(errno, errval)
 pymysql.err.OperationalError: (1045, "Access denied for user '_ddce7bd064efd9b5'@'localhost' (using password: YES)")
+2024-09-13 13:04:00,785 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for test
+2024-09-13 13:04:00,793 ERROR scheduler Skipped queueing hrms.hr.doctype.shift_assignment_schedule.shift_assignment_schedule.process_auto_shift_creation because it was found in queue for test
+2024-09-13 13:04:01,006 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for dcode.com
+2024-09-13 13:04:01,094 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for dcode.com
+2024-09-13 13:04:01,334 ERROR scheduler Skipped queueing hrms.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts because it was found in queue for saralrat
+2024-09-13 13:04:01,355 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for saralrat
+2024-09-13 13:04:01,376 ERROR scheduler Skipped queueing hrms.hr.doctype.shift_assignment_schedule.shift_assignment_schedule.process_auto_shift_creation because it was found in queue for saralrat
+2024-09-13 13:04:01,429 ERROR scheduler Skipped queueing hrms.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts because it was found in queue for print-designer.test
+2024-09-13 13:04:01,523 ERROR scheduler Skipped queueing hrms.hr.doctype.shift_assignment_schedule.shift_assignment_schedule.process_auto_shift_creation because it was found in queue for print-designer.test
+2024-09-13 13:04:01,565 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for print-designer.test

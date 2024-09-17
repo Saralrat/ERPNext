@@ -28,3 +28,6 @@ Form Dict: {'doctype': 'Sales Order', 'name': 'SAL-ORD-2024-00003', 'format': 'S
 2024-09-11 17:56:24,161 ERROR frappe New Exception collected in error log
 Site: print-designer.test
 Form Dict: {'doctype': 'Sales Order', 'name': 'SAL-ORD-2024-00004', 'format': 'Sales Order PD v2', '_lang': 'en', 'cmd': 'frappe.utils.print_format.download_pdf'}
+2024-09-13 19:10:16,827 ERROR frappe New Exception collected in error log
+Site: test
+Form Dict: {'fid': '5ddc573b09', 'dt': 'Company', 'dn': 'Tech Innovators Ltd.', 'cmd': 'frappe.desk.form.utils.remove_attach'}
